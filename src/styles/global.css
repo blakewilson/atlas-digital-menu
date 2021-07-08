@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Coustard&display=swap');
+
+:root {
+  --primary-color: #b5d5e1;
+  --logo-color: #555174;
+  --secondary-color: #c15e3c;
+  --light-bg: #f4ebda;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.box {
+  background-color: var(--light-bg);
+  border-radius: 1rem;
+  border: 5px solid var(--secondary-color);
+}
+
+.font-coustard {
+  font-family: 'Coustard', serif;
+}
