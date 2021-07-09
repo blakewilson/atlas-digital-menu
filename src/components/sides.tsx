@@ -1,11 +1,12 @@
+import { Side } from 'client';
 import Heading from 'components/heading';
 import SideItem from 'components/sideItem';
-import { client } from 'client';
 
-export default function Sides() {
-  const { useQuery } = client;
-  const sides = useQuery().sides()?.nodes;
+export interface SidesProps {
+  sides: Side[];
+}
 
+export default function Sides({ sides }: SidesProps) {
   return (
     <div>
       <Heading>Sides &amp; Desserts</Heading>

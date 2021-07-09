@@ -1,11 +1,12 @@
+import { Meal } from 'client';
 import Heading from 'components/heading';
 import MealItem from 'components/mealItem';
-import { client } from 'client';
 
-export default function Meals() {
-  const { useQuery } = client;
-  const meals = useQuery().meals()?.nodes;
+export interface MealsProps {
+  meals: Meal[];
+}
 
+export default function Meals({ meals }: MealsProps) {
   return (
     <div className="box p-4 mb-4">
       <div className="flex justify-between">

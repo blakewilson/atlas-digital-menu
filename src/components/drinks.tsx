@@ -1,11 +1,12 @@
-import { client } from 'client';
+import { Drink } from 'client';
 import DrinkItem from 'components/drinkItem';
 import Heading from 'components/heading';
 
-export default function Sides() {
-  const { useQuery } = client;
-  const drinks = useQuery().drinks()?.nodes;
+export interface DrinksProps {
+  drinks: Drink[];
+}
 
+export default function Drinks({ drinks }: DrinksProps) {
   return (
     <div>
       <div className="flex justify-between">
