@@ -8,7 +8,18 @@ export interface MealsProps {
 
 export default function Meals({ meals }: MealsProps) {
   return (
-    <div className="box p-4 mb-4">
+    <div className="relative box p-4 mb-4">
+      <img
+        src="/fries.png"
+        className="absolute left-0 -top-72"
+        style={{ width: `390px` }}
+      />
+
+      <img
+        src="/burger.png"
+        className="absolute right-0 -top-60"
+        style={{ width: `600px` }}
+      />
       <div className="flex justify-between">
         <Heading>Meals</Heading>
 
