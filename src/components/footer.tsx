@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="text-2xl text-center text-logo-color">
+    <footer className="text-2xl text-center text-logo-color mt-8">
       <p>
         <span className="text-secondary font-bold font-coustard">
           Available on Request:
