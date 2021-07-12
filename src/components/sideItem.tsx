@@ -11,7 +11,8 @@ export default function SideItem({ side }: SideItemProps) {
       <div className="w-full flex justify-between">
         <div>
           <h2 className="text-2xl">
-            {side.title} <span className="text-sm">{side.calories} CAL</span>
+            <span className="font-bold">{side.title}</span>{' '}
+            <span className="text-sm">{side.calories} CAL</span>
           </h2>
           <div
             className="text-lg"

@@ -5,7 +5,7 @@ export interface PriceProps {
 
 export default function Price({ children }: PriceProps) {
   return (
-    <span className="text-2xl text-secondary font-coustard font-bold">
+    <span className="text-3xl text-secondary font-coustard font-bold">
       ${children}
     </span>
   );

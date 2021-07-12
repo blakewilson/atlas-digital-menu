@@ -11,10 +11,11 @@ export default function DrinkItem({ drink }: DrinkItemProps) {
       <div className="w-full flex justify-between">
         <div>
           <h2 className="text-2xl">
-            {drink.title} <span className="text-sm">{drink.calories} CAL</span>
+            <span className="font-bold">{drink.title}</span>{' '}
+            <span className="text-sm">{drink.calories} CAL</span>
           </h2>
           <div
-            className="text-lg"
+            className="text-xl"
             dangerouslySetInnerHTML={{ __html: drink.description }}
           />
         </div>
