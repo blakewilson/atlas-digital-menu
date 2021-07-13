@@ -1,12 +1,11 @@
 {
-  "name": "next-headless-getting-started",
+  "name": "atlas-digital-menu",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "clean": "rimraf .next node_modules",
     "lint": "next lint",
     "generate": "gqless generate",
     "wpe-build": "next build"
